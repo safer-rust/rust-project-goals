@@ -119,7 +119,9 @@ future editions, or within future macro constructs such as `macro fn`.
   shouldn't have to parse an entire construct in order to extract one component
   of it.
 - Transforming iteration or matching into recursion is generally possible, but
-  can sometimes obfuscate logic.
+  can sometimes obfuscate logic. Users should be able to write macros using
+  iteration, matching, recursion, or any combination thereof, whichever they
+  feel is most appropriate for the problem.
 
 ## Work items over the next year
 
