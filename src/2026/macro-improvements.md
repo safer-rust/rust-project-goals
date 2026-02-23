@@ -39,9 +39,9 @@ attribute macros](https://github.com/rust-lang/rust/issues/143547) and
 [declarative derive macros](https://github.com/rust-lang/rust/pull/145208).
 These are available in nightly Rust, but not yet stable.
 
-Given workarounds such as the
+Given the popularity of workarounds such as the
 [`macro_rules_attribute`](https://crates.io/crates/macro_rules_attribute)
-crate), we know that some users will want to use these features as soon as
+crate, we know that some users will want to use these features as soon as
 they're available in stable. Other users may still wish to use proc macros even
 if these features exist in declarative macros, because some macros are simpler
 to implement using the full power of Rust code, and may be painful to refactor
@@ -123,8 +123,6 @@ future editions, or within future macro constructs such as `macro fn`.
 
 ## Work items over the next year
 
-> *Sketch out the specific things you are trying to achieve in this goal period. This should be short and high-level -- we don't want to see the design!*
-
 | Task        | Owner(s) | Notes |
 | ----------- | -------- | ----- |
 | Write user documentation for attribute and derive macros | @joshtriplett | |
@@ -154,7 +152,7 @@ arises of how it interacts with "macros 2.0", or whether it should wait for
 
 - Potential future extensions to declarative macros to improve
   hygiene/namespace handling.
-- An experimental marco system using the keyword `macro` that partially
+- An experimental macro system using the keyword `macro` that partially
   implements hygiene improvements and experimental alternate syntax, which
   doesn't have a champion or a path to stabilization, and hasn't seen active
   development in a long time.
