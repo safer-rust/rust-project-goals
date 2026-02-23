@@ -62,12 +62,13 @@ their dependencies.
 
 ### What we propose to do about it
 
-We do not yet have, and will need to write, clear documentation stating that
-projects may need additional functionality and users should not push for rapid
-adoption. Such documentation will help improve the effect of these features on
-the ecosystem, and avoid causing undue hardship for the maintainers of proc
-macro crates by inviting pressure to port such macros without sufficient
-replacement capabilities.
+I first intend to write clear documentation stating that projects may need
+additional functionality before they want to switch to declarative macros, and
+users should not push ecosystem crates excessively hard for rapid switches from
+proc macros to declarative macros. This documentation will help improve the
+effect of these features on the ecosystem, and avoid causing undue hardship for
+the maintainers of proc macro crates by inviting pressure to port such macros
+without sufficient replacement capabilities.
 
 After writing that documentation, I intend to propose stabilization of
 declarative attribute and derive macros, and address any issues that block
