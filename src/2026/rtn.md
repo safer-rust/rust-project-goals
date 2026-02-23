@@ -2,13 +2,13 @@
 
 | Metadata         |                      |
 |:-----------------|----------------------|
-| Point of contact | @nikomatsakis        |
+| Point of contact | @traviscross         |
 | Status           | Proposed             |
 | Contingent on    | Contributor          |
 | Roadmap          | Just add async       |
 | Tracking issue   |                      |
 | Zulip channel    | [#wg-async][channel] |
-| [lang] champion  | @nikomatsakis        |
+| [lang] champion  | @traviscross         |
 | [types] champion | @lcnr                |
 
 [channel]: https://rust-lang.zulipchat.com/#narrow/channel/187312-wg-async/
@@ -17,7 +17,7 @@
 
 Prepare TAIT (type alias impl trait) and return type notation (RTN) for stabilization together, giving Rust a coherent story for naming and bounding previously unnameable and unboundable types. TAIT lets users name opaque types like closures, async blocks, and complex iterators without boxing. RTN enables bounds like `T::method(..): Send`, solving the ["Send bound" problem][sb] and unblocking widespread use of async fn in traits. This goal also extends RTN to async closures via a new RFC. Full stabilization is blocked on the [next-gen trait solver](./next-solver.md) work and is intended to happen late this year.
 
-**Contingent on contributor:** The majority of the impl work for TAIT and RTN has been done however the syntactic design for RTN and async closures is incomplete. @nikomatsakis is seeking someone willing to help work on the RFC and explore the design space as well as to finalize impl details.
+**Contingent on contributor:** The majority of the impl work for TAIT and RTN has been done however the syntactic design for RTN and async closures is incomplete. We're seeking someone willing to help work on the RFC and explore the design space as well as to finalize impl details.
 
 [sb]: https://smallcultfollowing.com/babysteps/blog/2023/02/01/async-trait-send-bounds-part-1-intro/
 
@@ -140,15 +140,15 @@ We propose to prepare RTN for stabilization by:
 
 ### Looking for contributors
 
-@nikomatsakis is looking to mentor one or more contributors on this goal. The work spans language design (RTN for async closures RFC), compiler implementation (nightly implementation of async closure RTN), and stabilization preparation (researching TAIT interactions, updating the stabilization report). This is a great opportunity to get involved in Rust's type system and async ecosystem. Reach out to @nikomatsakis if you're interested.
+We're looking to mentor one or more contributors on this goal. The work spans language design (RTN for async closures RFC), compiler implementation (nightly implementation of async closure RTN), and stabilization preparation (researching TAIT interactions, updating the stabilization report). This is a great opportunity to get involved in Rust's type system and async ecosystem. Reach out to TC if you're interested.
 
 ### Work items over the next year
 
 | Task                                     | Owner(s)      | Notes                                      |
 |------------------------------------------|---------------|--------------------------------------------|
-| Research lang-side requirements for TAIT | @nikomatsakis | What's needed before RTN can stabilize     |
+| Research lang-side requirements for TAIT | @traviscross  | What's needed before RTN/TAIT can stabilize |
 | Update stabilization report              |               | Address concerns from closed PR            |
-| RFC for RTN on async closures            | @nikomatsakis | `F(..): Send` syntax, explore design space |
+| RFC for RTN on async closures            | @traviscross, @nikomatsakis | `F(..): Send` syntax, explore design space |
 | Implement RTN for async closures         |               | After RFC acceptance                       |
 
 ## Team asks
