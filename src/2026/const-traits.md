@@ -10,6 +10,7 @@
 | Roadmap          | Constify all the things            |
 | Roadmap          | Rust for Linux                     |
 | [types] champion | @oli-obk                           |
+| [lang] champion  | @traviscross                       |
 
 ## Summary
 
