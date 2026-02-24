@@ -2,10 +2,11 @@
 
 | Metadata              |                           |
 |:----------------------|---------------------------|
-| Point of contact      | @tmandry                  |
+| Point of contact      | @dingxiangfei2009         |
 | Status                | Proposed                  |
 | Roadmap               | Unblocking dormant traits |
 | Roadmap               | Rust for Linux            |
+| [lang] champion       | @cramertj                 |
 | Tracking issue        |                           |
 | Other tracking issues | rust-lang/rust#149556     |
 | Zulip channel         | N/A                       |
@@ -16,7 +17,7 @@ Within the 2026 goal period we strive for completion of the following items.
 - Implementation of the core language features stipulated by the RFC 3851. See rust-lang/rfcs#3851.
 - Continuous update on the RFC for errata to reflect necessary changes as implementation moves along.
 - Resolve the `impl` overlapping question, possibly as an optional feature behind an associated feature gate.
-- Field trial of the standard library trait refactoring with the `supertrat_auto_impl` feature gate.
+- Field trial of the standard library trait refactoring with the `supertrait_auto_impl` feature gate.
 - Implementation of the optional features and lints spelled in the RFC as much as possible.
 
 ## Motivation
