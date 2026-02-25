@@ -1,11 +1,12 @@
 # Async Future Memory Optimisation
 
-| Metadata         |                                                                                  |
-| :--------------- | -------------------------------------------------------------------------------- |
-| Point of contact | @dingxiangfei2009                                                                |
-| Status           | Proposed                                                                         |
-| Tracking issue   |                                                                                  |
-| Zulip channel    | N/A                                                                              |
+| Metadata            |                   |
+| :------------------ | ----------------- |
+| Point of contact    | @dingxiangfei2009 |
+| Status              | Proposed          |
+| Tracking issue      |                   |
+| Zulip channel       | N/A               |
+| [compiler] champion | @tmandry          |
 
 ## Summary
 

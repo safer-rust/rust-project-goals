@@ -56,7 +56,7 @@ The fundamental design philosophy remains:
 | ---------- | ------------- | --------------------------------------------- |
 | [lang]     | Medium        | Continued experiment support, design feedback |
 | [compiler] | Small         | Standard reviews for trait implementation PRs |
-| [types]    | Small         | Standard reviews for trait implementation PRs |
+| [types]    | Small         | Review work on the type system is expected to be trivial and feature-gated |
 
 ## Frequently asked questions
 
