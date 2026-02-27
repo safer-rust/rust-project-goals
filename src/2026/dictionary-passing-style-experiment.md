@@ -18,7 +18,7 @@ A lot of other languages, such as Scala, Haskell, and rocq also have traits/type
 
 ### The status quo
 
-Lazily recompute the used trait implementation on-demand during MIR borrowck and codegen ends up causing or at least allowing a bunch of bugs, see [#57893](https://github.com/rust-lang/rust/issues/57893), [#149800](https://github.com/rust-lang/rust/pull/149800) and [lcnr/random-rust-snippets#23](https://github.com/lcnr/random-rust-snippets/issues/23).
+Lazily recompute the used trait implementation on-demand during MIR borrowck and codegen ends up causing or at least allowing a bunch of bugs, e.g. [#57893](https://github.com/rust-lang/rust/issues/57893), [#149800](https://github.com/rust-lang/rust/pull/149800) and [lcnr/random-rust-snippets#23](https://github.com/lcnr/random-rust-snippets/issues/23).
 
 More generally, reproving trait bounds can fail if we're in a different environment. Because of this we cannot assume that fields are well-formed just because their containing struct is if we are in a generic context. The MIR inling also sometimes fails as the body of the inlined function is not be well-formed in the environment of the calling function. In general, a lot of places in the compiler have to handle normalization failing even though everything should already be well-formed.
 
